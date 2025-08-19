@@ -20,6 +20,26 @@ const headers = {
 
   for (const repo of repos) {
     const url = `https://api.github.com/repos/${repo}/releases`;
+    const repoUrl = `https://github.com/${repo}`;
+    let readmeUrl = null;
+
+    // Try to get README file via GitHub API
+    try {
+      const { data: readmeData } = await axios.get(
+        `https://api.github.com/repos/${repo}/readme`,
+        { headers }
+      );
+      if (readmeData && readmeData.html_url) {
+        readmeUrl = readmeData.html_url;
+      } else {
+        // Fallback: try the classic README.md route (this may 404 if it doesn't exist)
+        readmeUrl = `${repoUrl}/blob/main/README.md`;
+      }
+    } catch (err) {
+      // README does not exist or is not accessible
+      readmeUrl = null;
+    }
+
     const { data: releases } = await axios.get(url, { headers });
 
     // Sort releases by published date descending
@@ -39,6 +59,8 @@ const headers = {
 
       allReleases.push({
         repo,
+        repoUrl,
+        readmeUrl,
         tag: release.tag_name,
         name: release.name,
         published: release.published_at,
