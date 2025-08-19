@@ -2,7 +2,7 @@
   {
     "repo": "SteveFawcett/TestPlugin",
     "repoUrl": "https://github.com/SteveFawcett/TestPlugin",
-    "readmeUrl": "https://github.com/SteveFawcett/TestPlugin/blob/master/README.md",
+    "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/TestPlugin/main/README.md",
     "tag": "0.0.3",
     "name": "Release v0.0.3",
     "published": "2025-08-11T18:23:13Z",
@@ -32,7 +32,7 @@
   {
     "repo": "SteveFawcett/APIPlugin",
     "repoUrl": "https://github.com/SteveFawcett/APIPlugin",
-    "readmeUrl": "https://github.com/SteveFawcett/APIPlugin/blob/master/README.md",
+    "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/APIPlugin/main/README.md",
     "tag": "0.0.1",
     "name": "Release v0.0.1",
     "published": "2025-08-12T10:11:18Z",
