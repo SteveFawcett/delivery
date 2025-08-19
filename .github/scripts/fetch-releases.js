@@ -22,21 +22,30 @@ const headers = {
     const url = `https://api.github.com/repos/${repo}/releases`;
     const repoUrl = `https://github.com/${repo}`;
     let readmeUrl = null;
-
+    let defaultBranch = 'main'; // fallback
+    
+    try {
+      const { data: repoMeta } = await axios.get(
+        `https://api.github.com/repos/${repo}`,
+        { headers }
+      );
+      defaultBranch = repoMeta.default_branch || 'main';
+    } catch (err) {
+      // If we can't fetch repo metadata, default to 'main'
+      defaultBranch = 'main';
+    }
     // Try to get README file via GitHub API
     try {
       const { data: readmeData } = await axios.get(
         `https://api.github.com/repos/${repo}/readme`,
         { headers }
       );
-      if (readmeData && readmeData.path && readmeData.sha) {
-        const rawBase = `https://raw.githubusercontent.com/${repo}/main`;
-        readmeUrl = `${rawBase}/${readmeData.path}`;
+      if (readmeData && readmeData.path) {
+        readmeUrl = `https://raw.githubusercontent.com/${repo}/${defaultBranch}/${readmeData.path}`;
       } else {
-        readmeUrl = `${repoUrl}/raw/main/README.md`;
+        readmeUrl = `https://raw.githubusercontent.com/${repo}/${defaultBranch}/README.md`;
       }
     } catch (err) {
-      // README does not exist or is not accessible
       readmeUrl = null;
     }
 
