@@ -4,6 +4,7 @@
     "tag": "0.0.3",
     "name": "Release v0.0.3",
     "published": "2025-08-11T18:23:13Z",
+    "isLatest": true,
     "zipFiles": [
       {
         "name": "TestDataPlugin-v0.0.3.zip",
@@ -16,6 +17,7 @@
     "tag": "0.0.2",
     "name": "Release v0.0.2",
     "published": "2025-08-11T18:00:48Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -23,6 +25,7 @@
     "tag": "0.0.1",
     "name": "Release v0.0.1",
     "published": "2025-08-11T17:31:03Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -30,6 +33,7 @@
     "tag": "0.0.1",
     "name": "Release v0.0.1",
     "published": "2025-08-11T19:37:47Z",
+    "isLatest": true,
     "zipFiles": [
       {
         "name": "LocalCachePlugin-v0.0.1.zip",
@@ -42,6 +46,7 @@
     "tag": "1.0.5",
     "name": "Release v1.0.5",
     "published": "2025-08-15T19:08:49Z",
+    "isLatest": true,
     "zipFiles": []
   },
   {
@@ -49,6 +54,7 @@
     "tag": "1.0.4",
     "name": "Release v1.0.4",
     "published": "2025-08-12T15:25:08Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -56,6 +62,7 @@
     "tag": "1.0.3",
     "name": "Release v1.0.3",
     "published": "2025-08-12T13:49:37Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -63,6 +70,7 @@
     "tag": "1.0.2",
     "name": "Release v1.0.2",
     "published": "2025-08-12T12:48:59Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -70,6 +78,7 @@
     "tag": "1.0.1",
     "name": "Release v1.0.1",
     "published": "2025-08-11T14:46:53Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -77,6 +86,7 @@
     "tag": "0.0.2",
     "name": "Release v0.0.2",
     "published": "2025-08-11T14:40:57Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -84,6 +94,7 @@
     "tag": "0.0.1",
     "name": "Release v0.0.1",
     "published": "2025-08-11T14:14:59Z",
+    "isLatest": false,
     "zipFiles": []
   },
   {
@@ -91,6 +102,7 @@
     "tag": "0.0.1",
     "name": "Release v0.0.1",
     "published": "2025-08-12T10:11:18Z",
+    "isLatest": true,
     "zipFiles": [
       {
         "name": "APIPlugin-v0.0.1.zip",
