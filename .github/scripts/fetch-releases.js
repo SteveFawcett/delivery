@@ -29,11 +29,11 @@ const headers = {
         `https://api.github.com/repos/${repo}/readme`,
         { headers }
       );
-      if (readmeData && readmeData.html_url) {
-        readmeUrl = readmeData.html_url;
+      if (readmeData && readmeData.path && readmeData.sha) {
+        const rawBase = `https://raw.githubusercontent.com/${repo}/main`;
+        readmeUrl = `${rawBase}/${readmeData.path}`;
       } else {
-        // Fallback: try the classic README.md route (this may 404 if it doesn't exist)
-        readmeUrl = `${repoUrl}/blob/main/README.md`;
+        readmeUrl = `${repoUrl}/raw/main/README.md`;
       }
     } catch (err) {
       // README does not exist or is not accessible
