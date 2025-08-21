@@ -22,6 +22,7 @@ const headers = {
     const url = `https://api.github.com/repos/${repo}/releases`;
     const repoUrl = `https://github.com/${repo}`;
     let readmeUrl = null;
+    let ReadMeDocUrl = null;
     let defaultBranch = 'main'; // fallback
     
     try {
@@ -42,11 +43,14 @@ const headers = {
       );
       if (readmeData && readmeData.path) {
         readmeUrl = `https://raw.githubusercontent.com/${repo}/${defaultBranch}/${readmeData.path}`;
+        ReadMeDocUrl = `https://github.com/${repo}/blob/${defaultBranch}/${readmeData.path}`;
       } else {
         readmeUrl = `https://raw.githubusercontent.com/${repo}/${defaultBranch}/README.md`;
+        ReadMeDocUrl = `https://github.com/${repo}/blob/${defaultBranch}/README.md`;
       }
     } catch (err) {
       readmeUrl = null;
+      ReadMeDocUrl = null;
     }
 
     const { data: releases } = await axios.get(url, { headers });
@@ -70,6 +74,7 @@ const headers = {
         repo,
         repoUrl,
         readmeUrl,
+        ReadMeDocUrl,
         tag: release.tag_name,
         name: release.name,
         published: release.published_at,
