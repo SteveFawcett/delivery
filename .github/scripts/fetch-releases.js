@@ -24,7 +24,7 @@ const headers = {
     let readmeUrl = null;
     let ReadMeDocUrl = null;
     let defaultBranch = 'main'; // fallback
-    
+
     try {
       const { data: repoMeta } = await axios.get(
         `https://api.github.com/repos/${repo}`,
@@ -32,10 +32,9 @@ const headers = {
       );
       defaultBranch = repoMeta.default_branch || 'main';
     } catch (err) {
-      // If we can't fetch repo metadata, default to 'main'
       defaultBranch = 'main';
     }
-    // Try to get README file via GitHub API
+
     try {
       const { data: readmeData } = await axios.get(
         `https://api.github.com/repos/${repo}/readme`,
@@ -58,9 +57,18 @@ const headers = {
     // Sort releases by published date descending
     const sorted = releases.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
 
-    let latestMarked = false;
-
-    for (const release of sorted) {
+    // Find the latest release with zip assets
+    let latestIndex = -1;
+    for (let i = 0; i < sorted.length; i++) {
+      const zipAssets = sorted[i].assets.filter(a => a.name.endsWith('.zip'));
+      if (zipAssets.length > 0 && latestIndex === -1) {
+        latestIndex = i;
+        break;
+      }
+    }
+    
+    for (let i = 0; i < sorted.length; i++) {
+      const release = sorted[i];
       const zipAssets = release.assets
         .filter(a => a.name.endsWith('.zip'))
         .map(a => ({
@@ -78,11 +86,9 @@ const headers = {
         tag: release.tag_name,
         name: release.name,
         published: release.published_at,
-        isLatest: !latestMarked, // mark only the first valid release
+        isLatest: i === latestIndex,
         zipFiles: zipAssets
       });
-
-      latestMarked = true;
     }
   }
 
