@@ -6,7 +6,7 @@ const repos = [
   'SteveFawcett/RedisPlugin',
   'SteveFawcett/MSFSPlugin',
   'SteveFawcett/LocalCachePlugin',
-  'SteveFawcett/BroadcastPluginSDK',
+  'SteveFawcett/UpdatePlugin',
   'SteveFawcett/APIPlugin'
 ];
 
