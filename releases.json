@@ -4,10 +4,26 @@
     "repoUrl": "https://github.com/SteveFawcett/TestPlugin",
     "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/TestPlugin/master/README.md",
     "ReadMeDocUrl": "https://github.com/SteveFawcett/TestPlugin/blob/master/README.md",
+    "tag": "0.0.4",
+    "name": "Release v0.0.4",
+    "published": "2025-08-25T18:42:58Z",
+    "isLatest": true,
+    "zipFiles": [
+      {
+        "name": "TestDataPlugin-v0.0.4.zip",
+        "url": "https://github.com/SteveFawcett/TestPlugin/releases/download/0.0.4/TestDataPlugin-v0.0.4.zip"
+      }
+    ]
+  },
+  {
+    "repo": "SteveFawcett/TestPlugin",
+    "repoUrl": "https://github.com/SteveFawcett/TestPlugin",
+    "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/TestPlugin/master/README.md",
+    "ReadMeDocUrl": "https://github.com/SteveFawcett/TestPlugin/blob/master/README.md",
     "tag": "0.0.3",
     "name": "Release v0.0.3",
     "published": "2025-08-11T18:23:13Z",
-    "isLatest": true,
+    "isLatest": false,
     "zipFiles": [
       {
         "name": "TestDataPlugin-v0.0.3.zip",
