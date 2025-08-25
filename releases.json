@@ -16,22 +16,6 @@
     ]
   },
   {
-    "repo": "SteveFawcett/TestPlugin",
-    "repoUrl": "https://github.com/SteveFawcett/TestPlugin",
-    "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/TestPlugin/master/README.md",
-    "ReadMeDocUrl": "https://github.com/SteveFawcett/TestPlugin/blob/master/README.md",
-    "tag": "0.0.3",
-    "name": "Release v0.0.3",
-    "published": "2025-08-11T18:23:13Z",
-    "isLatest": false,
-    "zipFiles": [
-      {
-        "name": "TestDataPlugin-v0.0.3.zip",
-        "url": "https://github.com/SteveFawcett/TestPlugin/releases/download/0.0.3/TestDataPlugin-v0.0.3.zip"
-      }
-    ]
-  },
-  {
     "repo": "SteveFawcett/RedisPlugin",
     "repoUrl": "https://github.com/SteveFawcett/RedisPlugin",
     "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/RedisPlugin/master/README.md",
@@ -68,30 +52,14 @@
     "repoUrl": "https://github.com/SteveFawcett/LocalCachePlugin",
     "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/LocalCachePlugin/master/README.md",
     "ReadMeDocUrl": "https://github.com/SteveFawcett/LocalCachePlugin/blob/master/README.md",
-    "tag": "0.0.2",
-    "name": "Release v0.0.2",
-    "published": "2025-08-21T15:14:08Z",
+    "tag": "0.0.4",
+    "name": "Release v0.0.4",
+    "published": "2025-08-25T18:58:29Z",
     "isLatest": true,
     "zipFiles": [
       {
-        "name": "LocalCachePlugin-v0.0.2.zip",
-        "url": "https://github.com/SteveFawcett/LocalCachePlugin/releases/download/0.0.2/LocalCachePlugin-v0.0.2.zip"
-      }
-    ]
-  },
-  {
-    "repo": "SteveFawcett/LocalCachePlugin",
-    "repoUrl": "https://github.com/SteveFawcett/LocalCachePlugin",
-    "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/LocalCachePlugin/master/README.md",
-    "ReadMeDocUrl": "https://github.com/SteveFawcett/LocalCachePlugin/blob/master/README.md",
-    "tag": "0.0.1",
-    "name": "Release v0.0.1",
-    "published": "2025-08-11T19:37:47Z",
-    "isLatest": false,
-    "zipFiles": [
-      {
-        "name": "LocalCachePlugin-v0.0.1.zip",
-        "url": "https://github.com/SteveFawcett/LocalCachePlugin/releases/download/0.0.1/LocalCachePlugin-v0.0.1.zip"
+        "name": "LocalCachePlugin-v0.0.4.zip",
+        "url": "https://github.com/SteveFawcett/LocalCachePlugin/releases/download/0.0.4/LocalCachePlugin-v0.0.4.zip"
       }
     ]
   },
