@@ -45,5 +45,5 @@ for (const [repoName, releases] of Object.entries(grouped)) {
 }
 
 // Output to file
-fs.writeFileSync('PluginReleases.md', markdown);
+fs.writeFileSync('README.md', markdown);
 console.log('✅ Markdown table generated: PluginReleases.md');
