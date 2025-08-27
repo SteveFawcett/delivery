@@ -12,9 +12,11 @@ for (const item of data) {
   grouped[repoName].push(item);
 }
 
-// Sort versions descending
+// Sort versions descending and limit to 10
 for (const repo in grouped) {
-  grouped[repo].sort((a, b) => semver.rcompare(a.tag, b.tag));
+  grouped[repo] = grouped[repo]
+    .sort((a, b) => semver.rcompare(a.tag, b.tag))
+    .slice(0, 10);
 }
 
 // Build Markdown
@@ -26,23 +28,22 @@ for (const [repoName, releases] of Object.entries(grouped)) {
   markdown += `## 🔌 [${repoName}](${repoUrl})\n`;
   markdown += `_[View README](${ReadMeDocUrl})_\n\n`;
 
-  for (const release of releases) {
-    const published = new Date(release.published).toISOString().slice(0, 16).replace('T', ' ');
-    const latestBadge = release.isLatest ? ' 🟢 **Latest**' : '';
+  markdown += `| Version | Published | Downloads | Latest |\n`;
+  markdown += `|---------|-----------|-----------|--------|\n`;
 
-    markdown += `### ${release.name}${latestBadge}\n`;
-    markdown += `- 📅 Published: \`${published}\`\n`;
-    markdown += `- 🏷️ Tag: \`${release.tag}\`\n`;
-    markdown += `- 📦 Downloads:\n`;
-    for (const zip of release.zipFiles) {
-      markdown += `  - [\`${zip.name}\`](${zip.url})\n`;
-    }
-    markdown += `\n`;
+  for (const release of releases) {
+    const published = new Date(release.published).toISOString().slice(0, 10);
+    const latest = release.isLatest ? '🟢' : '';
+    const downloads = release.zipFiles
+      .map(zip => `[${zip.name}](${zip.url})`)
+      .join('<br>');
+
+    markdown += `| \`${release.tag}\` | ${published} | ${downloads} | ${latest} |\n`;
   }
 
-  markdown += `---\n\n`;
+  markdown += `\n---\n\n`;
 }
 
 // Output to file
 fs.writeFileSync('PluginReleases.md', markdown);
-console.log('✅ Markdown generated: PluginReleases.md');
+console.log('✅ Markdown table generated: PluginReleases.md');
