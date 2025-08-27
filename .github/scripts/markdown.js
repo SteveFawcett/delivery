@@ -2,7 +2,7 @@ const fs = require('fs');
 const semver = require('semver');
 
 // Load JSON
-const data = require('./releases.json');
+const data = require('../../releases.json');
 
 // Group by repo name
 const grouped = {};
