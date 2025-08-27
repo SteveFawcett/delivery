@@ -27,7 +27,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Markdown Writer
-        run: node .github/scripts/fetch-releases.js
+        run: node .github/scripts/markdown.js
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
