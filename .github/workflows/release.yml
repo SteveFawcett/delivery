@@ -26,10 +26,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Run Markdown Writer
+        run: node .github/scripts/fetch-releases.js
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Commit release data
-        run: |
+        run: node .github/scripts/markdown.js
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add releases.json
+          git add PluginReleases.md
           git commit -m "Update release data" || echo "No changes to commit"
           git push
