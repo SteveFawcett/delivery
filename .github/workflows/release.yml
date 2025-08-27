@@ -32,7 +32,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Commit release data
-        run: node .github/scripts/markdown.js
+        run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add releases.json
