@@ -39,7 +39,8 @@ _[View README](https://github.com/SteveFawcett/UpdatePlugin/blob/master/README.m
 
 | Version | Published | Downloads | Latest |
 |---------|-----------|-----------|--------|
-| `v0.0.1` | 2025-08-27 | [UpdatePlugin-v0.0.1.zip](https://github.com/SteveFawcett/UpdatePlugin/releases/download/v0.0.1/UpdatePlugin-v0.0.1.zip) | 🟢 |
+| `v0.0.2` | 2025-08-27 | [UpdatePlugin-v0.0.2.zip](https://github.com/SteveFawcett/UpdatePlugin/releases/download/v0.0.2/UpdatePlugin-v0.0.2.zip) | 🟢 |
+| `v0.0.1` | 2025-08-27 | [UpdatePlugin-v0.0.1.zip](https://github.com/SteveFawcett/UpdatePlugin/releases/download/v0.0.1/UpdatePlugin-v0.0.1.zip) |  |
 
 ---
 
