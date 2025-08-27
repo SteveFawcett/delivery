@@ -3,7 +3,8 @@ _[View README](https://github.com/SteveFawcett/TestPlugin/blob/master/README.md)
 
 | Version | Published | Downloads | Latest |
 |---------|-----------|-----------|--------|
-| `0.0.4` | 2025-08-25 | [TestDataPlugin-v0.0.4.zip](https://github.com/SteveFawcett/TestPlugin/releases/download/0.0.4/TestDataPlugin-v0.0.4.zip) | 🟢 |
+| `v0.0.5` | 2025-08-27 | [TestDataPlugin-v0.0.5.zip](https://github.com/SteveFawcett/TestPlugin/releases/download/v0.0.5/TestDataPlugin-v0.0.5.zip) | 🟢 |
+| `0.0.4` | 2025-08-25 | [TestDataPlugin-v0.0.4.zip](https://github.com/SteveFawcett/TestPlugin/releases/download/0.0.4/TestDataPlugin-v0.0.4.zip) |  |
 
 ---
 
@@ -30,7 +31,8 @@ _[View README](https://github.com/SteveFawcett/LocalCachePlugin/blob/master/READ
 
 | Version | Published | Downloads | Latest |
 |---------|-----------|-----------|--------|
-| `0.0.4` | 2025-08-25 | [LocalCachePlugin-v0.0.4.zip](https://github.com/SteveFawcett/LocalCachePlugin/releases/download/0.0.4/LocalCachePlugin-v0.0.4.zip) | 🟢 |
+| `v0.0.5` | 2025-08-27 | [LocalCachePlugin-v0.0.5.zip](https://github.com/SteveFawcett/LocalCachePlugin/releases/download/v0.0.5/LocalCachePlugin-v0.0.5.zip) | 🟢 |
+| `0.0.4` | 2025-08-25 | [LocalCachePlugin-v0.0.4.zip](https://github.com/SteveFawcett/LocalCachePlugin/releases/download/0.0.4/LocalCachePlugin-v0.0.4.zip) |  |
 
 ---
 
@@ -49,7 +51,8 @@ _[View README](https://github.com/SteveFawcett/APIPlugin/blob/master/README.md)_
 
 | Version | Published | Downloads | Latest |
 |---------|-----------|-----------|--------|
-| `0.0.1` | 2025-08-25 | [APIPlugin-v0.0.1.zip](https://github.com/SteveFawcett/APIPlugin/releases/download/0.0.1/APIPlugin-v0.0.1.zip) | 🟢 |
+| `v0.0.2` | 2025-08-27 | [APIPlugin-v0.0.2.zip](https://github.com/SteveFawcett/APIPlugin/releases/download/v0.0.2/APIPlugin-v0.0.2.zip) | 🟢 |
+| `0.0.1` | 2025-08-25 | [APIPlugin-v0.0.1.zip](https://github.com/SteveFawcett/APIPlugin/releases/download/0.0.1/APIPlugin-v0.0.1.zip) |  |
 
 ---
 
