@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install axios fs path
+        run: npm install axios fs path semver
 
       - name: Run release fetcher
         run: node .github/scripts/fetch-releases.js
