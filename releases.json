@@ -64,6 +64,22 @@
     ]
   },
   {
+    "repo": "SteveFawcett/UpdatePlugin",
+    "repoUrl": "https://github.com/SteveFawcett/UpdatePlugin",
+    "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/UpdatePlugin/master/README.md",
+    "ReadMeDocUrl": "https://github.com/SteveFawcett/UpdatePlugin/blob/master/README.md",
+    "tag": "v0.0.1",
+    "name": "Release v0.0.1",
+    "published": "2025-08-27T14:22:00Z",
+    "isLatest": true,
+    "zipFiles": [
+      {
+        "name": "UpdatePlugin-v0.0.1.zip",
+        "url": "https://github.com/SteveFawcett/UpdatePlugin/releases/download/v0.0.1/UpdatePlugin-v0.0.1.zip"
+      }
+    ]
+  },
+  {
     "repo": "SteveFawcett/APIPlugin",
     "repoUrl": "https://github.com/SteveFawcett/APIPlugin",
     "readmeUrl": "https://raw.githubusercontent.com/SteveFawcett/APIPlugin/master/README.md",
